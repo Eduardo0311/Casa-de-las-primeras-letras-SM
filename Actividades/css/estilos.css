@@ -1,0 +1,265 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+                                        /* Este es el header */
+.header {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(238, 239, 243);
+    margin: auto;
+}
+
+.header-contenedor {
+    max-width: 960px;
+    margin: auto;
+}
+
+.header-img {
+    text-align: center;
+}
+
+                        /* Esta parte es sobre el contenido de la página como tal */
+body{
+    background: rgb(238, 239, 243);
+}
+
+
+                    /* Este wrap abarca todo el cuerpo de la página hasta el footer */
+.wrap{
+    width: 960px;
+    margin: auto;
+    clear: both;
+}
+
+                                        /*Esta parte es del menú */
+.menu {
+    margin: auto;
+    width: 100%;
+    width: 960px;
+    margin-top: -4px;
+}
+
+.menu-contenedor{
+   float: left;
+}
+
+.nav{
+    position: absolute;
+    z-index: 100;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.nav li a {
+    background-color: #762933;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    width: 240px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.nav li a:hover {
+    background-color: #5c1c24;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+
+
+.contenedor-principal{
+    width: 600;
+    margin: 39px 0px 0px 0px;
+    float: left;
+}
+
+                    /*Esta es la parte de las actividades*/
+
+.titulo-actividades{
+    text-align: center;
+    font-size: 31px;
+    color: black;
+    background-color: #dc8e2c;
+    border: solid 2px black;
+}
+
+.contenedor-actividad{
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.actividad{
+    width: 600px;
+    height: 470px;
+    margin: auto;
+    background-color: rgb(93, 156, 197);
+}
+
+.titulo-actividad{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.descripcion-actividad{
+    margin: 0px 15px 0px 15px;
+    font-size: 18px;
+}
+
+                    /*Este es el widget*/
+
+aside{
+    float: right;
+    width: 320px;
+    height: 520px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 10px 10px 0px 10px;
+    
+}
+
+.widget{
+    margin-bottom: 10px;
+    float: left;
+}
+
+                                    /* Esta es la parte del footer*/
+                                
+ footer{
+     
+    width: 100%;
+    background:#5c1c24;
+    color: white;
+    text-decoration: none;
+    clear: both;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 350px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.colum2{
+    max-width: 1000px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 35px;
+    height: 35px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 15px;
+    color: white;
+}
+
+.row label a{
+    text-decoration: none;
+    color: white;
+}
+
+.colum3{
+   max-width: 280px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;
+    background: #762933;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright{
+    color: white;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+   text-decoration: none;
+   color: white;
+
+}

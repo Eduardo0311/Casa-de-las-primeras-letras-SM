@@ -1,0 +1,729 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+                                        /* Este es el header */
+.header {
+    width: 100%;
+    height: 240px;
+    background-color: rgb(238, 239, 243);
+    margin: auto;
+}
+
+.header-contenedor {
+    max-width: 960px;
+    margin: auto;
+}
+
+.header-img {
+    text-align: center;
+}
+
+                        /* Esta parte es sobre el contenido de la página como tal */
+body{
+    background: rgb(238, 239, 243);
+}
+
+
+                    /* Este wrap abarca todo el cuerpo de la página hasta el footer */
+.wrap{
+    width: 960px;
+    margin: auto;
+    clear: both;
+}
+
+                                        /*Esta parte es del menú */
+.menu {
+    margin: auto;
+    width: 100%;
+    width: 960px;
+    margin-top: -4px;
+}
+
+.menu-contenedor{
+    position: relative;
+}
+
+.nav{
+    position: absolute;
+    z-index: 100;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.nav li a {
+    background-color: #762933;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    width: 240px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.nav li a:hover {
+    background-color: #5c1c24;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+                    /* Estos dos contendores son el cuerpo de la pag*/
+
+.contenedor-principal{
+    width: 600px;
+    margin: 50px 0px 30px 0px;
+    float: left;
+}
+
+.contenedor-secundario{
+    clear: both;
+}
+
+                                        /* Esta es la parte del slideshow */
+#slideshow{
+    padding: 0px;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.slider ul{
+    display: flex;
+    width: 300%;
+
+    animation: cambio 15s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li{
+    width: 100%;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    height: 260px;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    28% { margin-left: 0;}
+
+    38% {margin-left: -100%;}
+    66% {margin-left: -100%;}
+
+    76% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+                            /* Esta es la parte de "visita nuestros espacios" */
+
+.titulo-articulo {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+    background-color: #dc8e2c;
+    border: solid 2px black;
+}
+
+.espacios {
+    width: 600px;
+    height: 280px;
+    margin-top: 30px;
+    padding: 0px 5px 0px 0px;
+}
+
+.espacio-1{
+    float: left;
+}
+
+.espacio-2{
+    float: right;
+}
+
+.thumb{
+    height: 240px;
+    width: 290px;
+    padding: 0px 0px 0px 5px ;
+}
+
+.wrap-espacios{
+    width: 100%;
+}
+
+.titulo-espacios{
+    text-align: center;
+    font-size: 20px;
+    border: solid 2px black;
+    margin-left: 14px;
+    margin-right: 7px;
+    background-color: rgb(93, 156, 197);
+    margin-bottom: 10px;
+}
+
+                            /* Esta es la sección de "Unete a nuestros cursos" */
+
+
+.cursos-wrap{
+    margin-top: 30px;
+    width: 100%;
+    height: 450px;
+}
+
+.cursos{
+    width: 100%;
+    height: 135px;
+}
+
+.seccion-izq {
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 80px;
+    text-align: center;
+    width: 30%;
+}
+
+.seccion-izq2{
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 150px;
+    text-align: center;
+    width: 30%;
+}
+
+.seccion-der {
+    float: right;
+    width: 45%;
+    border: solid 3px black;
+    background: #762933;
+    margin-right: 110px;
+}
+
+.seccion-der2 {
+    float: right;
+    width: 45%;
+    border: solid 3px black;
+    background: #762933;
+    margin-right: 50px;
+}
+
+.seccion-der img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 5px 0px 5px 5px;
+}
+
+.seccion-der2 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+
+.cursos-texto {
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: right;
+    margin: 37px 90px 0px 0px;
+}
+
+.cursos-texto2 {
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: right;
+    margin: 34px 60px 0px 0px;
+}
+
+.cursos-texto3 {
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: right;
+    margin: 37px 95px 0px 0px;
+}
+
+
+                        /*Esta es la sección de "¡No te pierdas nuestras actividades*/
+
+.titulo-articulo2 {
+    clear: both;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    background-color: #dc8e2c;
+    border: solid 2px black;    
+}
+
+.primera-fila{
+    width: 100%;
+    height: 250px;
+    clear: both;
+}
+
+.primera-fila-izq{
+    float: left;
+}
+
+.primera-fila-izq img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.texto-img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: -1;
+    text-align: center;
+    transform: 0px 0px 1;
+    transform: translate(0px, 0px) scale(1);
+    transition: all 0s ease 0s;
+    font-size: 20px;
+}
+
+.primera-fila-izq:hover .texto-img{
+    transform: 0px 0px 2;
+    transform: translate(0px, 0px) scale(2);
+}
+
+.primera-fila-der:hover .texto-img{
+    transform: 0px 0px 2;
+    transform: translate(0px, 0px) scale(2);
+}
+
+.texto-img2{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    z-index: -1;
+    text-align: center;
+    transform: 0px 0px 1;
+    transform: translate(0px, 0px) scale(1);
+    transition: all 0s ease 0s;
+    font-size: 20px;
+}
+
+.segunda-fila-izq:hover .texto-img2{
+    transform: 0px 0px 2;
+    transform: translate(0px, 0px) scale(2);
+} 
+
+.segunda-fila-der:hover .texto-img2{
+    transform: 0px 0px 2;
+    transform: translate(0px, 0px) scale(2);
+} 
+
+.primera-fila-der{
+    float: right;
+}
+
+.primera-fila-der img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.segunda-fila{
+    width: 100%;
+    height: 250px;
+}
+
+.segunda-fila-izq{
+    float: left;
+    margin-left: 220px;
+}
+
+.segunda-fila-izq img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.segunda-fila-der{
+    float: right;
+    margin-right: 220px;
+}
+
+.segunda-fila-der img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+                                /*Esta es la parte del formulario*/
+
+.form_wrap{
+    width: 960px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
+
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+                                    /* Informacion de Contacto*/
+
+.cantact_info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #762933;
+    opacity: 0.9;
+}
+
+.cantact_info{
+    width: 38%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../fondo.jpg');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.info_title,
+.info_items{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.info_title{
+    margin-bottom: 60px;
+}
+
+.info_title span{
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.info_items p{
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span{
+    font-size: 50px;
+    margin-right: 15px;
+    margin-left: 4px;
+}
+
+                                    /* Formulario de contacto*/
+form.form_contact{
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2{
+	font-size: 25px;
+	font-weight: 600;
+	color: #303030;
+	margin-bottom: 30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label{
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: 'Open sans';
+	color: #5A5A5A;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="button"]{
+    width: 180px;
+	background: #762933;
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: #fff;
+	font-family: 'Open sans';
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+form.form_contact input[type="button"]:hover{
+    background: #5c1c24;
+}
+
+                                    /* Ventana de errores*/
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-family: 'Ubuntu';
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #C5C5C5;
+	margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+
+	background: #E25151;
+	color: #fff;
+	border: 2px solid #B14141;
+	cursor: pointer;
+
+}
+
+                    /*Este es el widget*/
+
+aside{
+    float: right;
+    width: 320px;
+    height: 520px;
+    margin-top: 70px;
+    margin-left: 20px;
+    padding: 10px 10px 0px 10px;
+    
+}
+
+.widget{
+    margin-bottom: 10px;
+    float: left;
+}
+
+                                    /* Esta es la parte del footer*/
+footer{
+    width: 100%;
+    background:#5c1c24;
+    color: white;
+    text-decoration: none;
+    clear: both;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 350px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.colum2{
+    max-width: 1000px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 35px;
+    height: 35px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 15px;
+    color: white;
+}
+
+.row label a{
+    text-decoration: none;
+    color: white;
+}
+
+.colum3{
+   max-width: 280px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;
+    background: #762933;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright{
+    color: white;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+   text-decoration: none;
+   color: white;
+
+}
